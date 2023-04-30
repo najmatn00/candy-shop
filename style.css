@@ -1,0 +1,802 @@
+
+@font-face {
+    font-family: iran-sans;
+    src: url(/assets/fonts/IRANSans.woff2);
+}
+@font-face {
+    font-family: iran-sans-bold;
+    src: url(/assets/fonts/IRANSans-Bold.woff2);
+    font-weight: bold;
+}
+@font-face {
+    font-family: sarbaz;
+    src: url(/assets/fonts/Sarbaz.ttf);
+}
+@font-face {
+    font-family: lemonda;
+    src: url(/assets/fonts/Lemonada.woff2);
+}
+
+  
+@font-face {
+    font-family: hilda;
+    src: url(/assets/fonts/Hilda.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iran-sans;
+}
+.header{
+    display: flex;
+    /* border: 1px solid; */
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+}
+.header__wrapp{
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.header__menu{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-color: #f4346c;
+}
+
+.header__search{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.header__logo{
+    height: 3rem;
+    width: 3rem;
+}
+.header__logo img {
+    width: 100%;
+    height: 100%;
+}
+.main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image:radial-gradient(circle at bottom right,rgba(255,255,255,0) 35%,#ffffff 100%),url(/assets/img/candy-shop-24-min.jpg)!important;
+}
+
+.main a{
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff!important;
+    border: .5px solid;
+    text-align: center;
+    border-radius: 100px;
+}
+.main__first-text{
+    color: #ffffff!important;
+    padding:4rem 0rem 0 1rem ;
+    font-size:xxx-large;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, .2);
+    font-family: sarbaz;
+}
+.main__secand-text{
+    color:#0a2d61!important ;
+    padding-left: 2.5rem;
+    font-family:hilda ;
+}
+.main__text{
+    padding: 2rem 13rem 0 2.5rem;
+    line-height: 1.4rem;
+    color: #0a2d61!important;
+    font-weight: bold;
+}
+.main__first-link a{
+    background-image: linear-gradient(90deg,#ff3d97 0%,#f4346c 100%);
+    padding: 1rem;
+    /* font-weight:bold; */
+    font-size: larger;
+    margin: 1rem 0 2rem 0;
+    transform: rotate(-5deg);
+    
+}
+.main__secand-link a{
+    margin-left: 5rem;
+    /* margin-bottom:7rem ; */
+    padding: 1rem;
+    transform: rotate(5deg);
+    /* font-weight:bold; */
+    background-image: linear-gradient(90deg,#56d4ff 0%,#82a8ff 100%);
+}
+.main__button-pic{
+    background-image:url(/assets/img/white.svg) ;
+    height: 7rem;
+}
+.main__pastil{
+    background-color: #f2f5ff;
+}
+.main__pastil img{
+    margin: 6rem 0;
+    height: 100%;
+    width: 100%;
+    transform: rotate(10deg);
+    transition: linear  1s;
+}
+.main__pastil img.show{
+    transform:rotate(0);
+}
+.about-us{
+    background-image: url(/assets/img/candy-shop-32-min.png);
+    /* height: 40rem; */
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    /* transform: rotate(180deg); */
+    background-repeat: no-repeat;
+    padding-bottom: 4rem;
+}
+.about-us h1{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: sarbaz;
+    color:#fff;
+    text-shadow: 0.04em 0.14em 0.33em rgb(10 45 97 / 16%);
+    font-size: 56px;
+    font-weight: 500;
+}
+.abous-us__content {
+    text-align: right;
+    margin: 2rem;
+    background-image: url(/assets/img/candy-shop-31-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* backdrop-filter: blur(5px); */
+}
+.abous-us__content h1{
+    font-family: hilda;
+    font-weight: 700;
+    color: #0a2d61!important;
+    margin-bottom: 2rem;
+}
+.abous-us__content p{
+    font-weight: 600;
+    color: rgba(0,0,0,0.36)!important;
+    line-height: 1.5em;
+    margin-bottom: 2rem;
+}
+.abous-us__content a{
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    background-image:  linear-gradient(90deg,#ff3d97 0%,#f4346c 100%);
+    font-weight: 700 !important;
+    font-size: 15px;
+    color: #ffffff!important;
+    /* margin-top: 4rem; */
+}
+.about-us__button{
+    background-image: url(/assets/img/candy-shop-33-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10rem;
+}
+.servises{
+    background-color: #f2f5ff!important;
+    text-align: right;
+}
+
+.servises h1{
+    font-family: sarbaz;
+    color: #ffffff!important;
+    text-shadow: 0.04em 0.14em 0.33em rgb(10 45 97 / 16%);
+    margin-right: 2rem;
+    padding-top: 3rem;
+    font-size: 56px;
+}
+.servises h2{
+    font-family: hilda;
+    font-weight: 700;
+    color: #0a2d61!important;
+    line-height: 1.2em;
+    margin-right: 2rem;
+    margin-top: 4rem;
+}
+.servises .servisex__text{
+    line-height: 1.8em;
+    color: #666;
+    padding: 2rem;
+    font-weight: 500;
+    /* margin-top: 2rem; */
+}
+.srvises__icon{
+    display: flex;
+    align-items:center ;
+    justify-content: flex-start;
+    margin-top: 6rem;
+    margin-left: 3rem;
+}
+.srvises__icon {
+    transform: rotate(-10deg);
+}
+.pastil__sh{
+    display: flex;
+    flex-direction: column;
+}
+.pastil__sh .servise__pic{
+    padding-right: 4rem;
+    padding-top: 4rem;
+    width: 100%;
+    height: 100%;
+}
+.ability{
+    background-color: #f2f5ff!important;
+}
+.ability ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin:0 2rem;
+    color: #fff!important ;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+.ability li{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 6rem;
+    margin-top: 4rem;
+}
+.party{
+    background-image: url(/assets/img/candy-shop-20-min.png);
+    transform: rotate(-5deg);
+}
+.birthday__party{
+    background-image: url(/assets/img/candy-shop-21-min.png);
+}
+.gift{
+    background-image: url(/assets/img/candy-shop-08-min.png);
+}
+.candy{
+    background-image: url(/assets/img/candy-shop-05.png);
+    transform: rotate(8deg);
+}
+.gifts{
+    background-image: url(/assets/img/candy-shop-07-min.png);
+    transform: rotate(8deg);
+}
+
+.candyshop{
+    background-image: url(/assets/img/candy-shop-10-2-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.candyshop h1{
+    color: #ffffff!important;
+    font-family: 'sarbaz';
+    font-weight: 500;
+    text-align: center;
+    /* margin-top: 4rem; */
+    transform: translateY(3.5rem);
+    font-size:xxx-large;
+    text-shadow: 0.04em 0.14em 0.33em rgba(10,45,97,0.16);
+}
+
+.ice{
+    background-color: #f2f5ff!important;
+
+}
+.ice__one{
+    padding: 6rem 2rem 2rem 2rem;
+
+}
+.ice h2{
+    color: #0a2d61!important;
+    line-height: 1.2em;
+    text-align: right;
+    font-weight: 700;
+    font-family: 'hilda';
+    font-size: 34px;
+}
+.ice p{
+    text-align: right;
+    line-height: 1.8em;
+    color: #666;
+    font-weight: 500;
+    margin-top: 2rem
+}
+.ice__one .one{
+    transform: rotate(-14deg);
+    margin-left: .8rem;
+    transition: linear 500ms;
+    opacity: 0;
+}
+.ice__one .one.show{
+    /* transform: rotate(-10deg); */
+    opacity: 1;
+}
+.ice__one .two{
+    /* position: relative; */
+    height: 300px;
+    transform: translateY(-28px);
+    margin-left: 2rem;
+    margin-bottom: 8rem;
+    opacity: 0; 
+    transition: linear 500ms;
+}
+.ice__one .two.show{
+    opacity: 1;
+}
+.ice__one ul li{
+    list-style: none;
+    text-align: center;
+    /* border: 1px solid; */
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.ice__one ul li img{
+    border-radius: 50%;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: linear 2s;
+}
+.ice__one ul li img.show{
+    opacity: 1;
+}
+.ice__one ul li p{
+    padding: 0 3rem;
+    text-align: center;
+}
+.ice__one ul li h1{
+color: #0a2d61!important;
+
+}
+.ice__one ul li a{
+background-image: linear-gradient(90deg,#ff3d97 0%,#f4346c 100%);
+font-weight: 700!important;
+border-radius: 100px;
+font-size: 15px;
+text-decoration: none;
+text-align: center;
+color: #ffffff!important;
+padding: .5rem 1.5rem;
+display: inline-block;
+margin: 1rem 0;
+}
+.imazing{
+    background-color: #f2f5ff!important;
+}
+.imazing ul{
+    background-color: #f2f5ff; 
+    background-image: url(/assets/img/candy-shop-14-min.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 2rem;
+}
+.imazing ul p{
+    color: #0a2d61!important;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: iran-sans-bold;
+}
+.imazing__one{
+    padding: 12rem  2rem 2rem 2rem;
+    text-align: right;
+}
+.imazing__one h2{
+    color: #0a2d61!important;
+    line-height: 1.2em;
+    text-align: right;
+    font-family: 'hilda';
+    font-weight: 700;
+    font-size: 33px;
+}
+.imazing__one p{
+    text-align: right;
+    line-height: 1.8em;
+    color: #666;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.imazing__two{
+     background-color: #f2f5ff!important; ;
+}
+.imazing__two img{
+    padding-right: 4rem;
+    padding-top: 4rem;
+    padding-left: 1rem;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-10deg); 
+    transition: linear 1s;
+}
+.imazing__two img.show{
+    transform: rotate(0); 
+}
+.footer{
+    background-image:linear-gradient(180deg,#c6eefd 0%,rgba(230,111,175,0.41) 100%)!important; ;
+}
+.footer__back{
+    background-image: url(/assets/img/candy-shop-12-1-min.png);
+    background-size: contain;
+    background-position:center;
+    height: 10rem;
+    
+}
+.footer__one{
+    padding: 2rem;
+    text-align: center;
+}
+.footer__one h1{
+    /* transform: translateY(4rem); */
+    font-family: 'Sarbaz';
+    font-size: 60px;
+    color: #ffffff!important;
+    text-shadow: 0.04em 0.14em 0.33em rgba(10,45,97,0.16);
+}
+.footer__one h2{
+    font-family: 'hilda';
+    font-weight: 700;
+    font-size: 34px;
+    color: #0a2d61!important;
+}
+.footer__one p{
+    font-size: 16px;
+    color: #fff!important;
+    margin-top: 2rem;
+}
+.footer__one h3{
+    font-size: 20px;
+    color: #0a2d61!important;
+    font-family: lemonda;
+    letter-spacing: -1px;
+}
+.footer__one h3 a{
+    text-decoration: none;
+    color: #0a2d61!important;
+}
+.footer__one__a,.footer__one__b,.footer__one__c{
+    margin-top: 2rem;
+}
+.footer__one ul{
+    list-style: none;
+}
+.footer__one .search{
+    text-decoration: none;
+    /* border: 1px solid; */
+    border-radius: 100px;
+    background-image: linear-gradient(90deg,#ff3d97 0%,#f4346c 100%);
+    font-weight: 700!important;
+    border-radius: 100px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff!important;
+    padding: .5rem 1.5rem;
+    display: inline-block;
+    margin: 2rem 0;
+    box-shadow: 0px 20px 40px -10px rgba(255,61,151,0.5);
+}
+.search{
+    transition: linear 500ms;
+}
+.search:hover{
+    padding: .5rem 2rem ;
+}
+.header__menu__lap{
+    display: none;
+}
+.header__menu__lap.show{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    background-color: red;
+    right: 0;
+    height: 100vh;
+    width: 40%;
+    background-color: #fff;
+
+}
+.background-black{
+       /* display: none; */
+       background-color: rgba(0, 0, 0, .4);
+       width: 100%;
+       height: 100vh;
+       position: fixed;
+       top: 0;
+       transition: linear 1500ms;
+       opacity: 0;
+       z-index: -1;
+}
+.background-black.show{
+    z-index: 2;
+    opacity: 1;
+    display: block;
+}
+.header__menu__lap a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+
+@media(min-width: 1024px) {
+   .header__menu__lap{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap: 2rem;
+        /* border: 1px solid; */
+   }
+   .header__menu{
+    display: none;
+   }
+   .main__first-text{
+    font-size: 120px;
+    text-shadow: 0.08em 0.08em 0.08em rgba(10,45,97,0.16);
+    margin-left: 4rem;
+   }
+   .main__secand-text{
+    font-size: 80px;
+    margin-left: 4rem;
+    transform: translateY(-5rem);
+    line-height: 8rem;
+   }
+   .main__text{
+    margin: 0 35rem 0 4rem;
+    transform: translateY(-5rem);
+   }
+   .main__first-link a,.main__secand-link a{
+    /* transform: translateY(-5rem); */
+    margin-left: 4rem;
+    /* margin-top: -10rem; */
+    transition: linear 500ms ;
+   }
+   .main__first-link-a:hover,.main__secand-link-b:hover{
+    padding: 1rem 1.5rem;
+   }
+   .main__button-pic{
+    height: 30vh;
+    background-size: cover;
+    position: center;
+    transform: rotateY(180deg);
+   }
+   .main__pastil img{
+    padding:0rem 12rem;
+   }
+   .about-us h1{
+    font-size: 120px;
+   }
+   .abous-us__content{
+    /* max-width: 1024px; */
+    height: 50rem;}
+    .abous-us__content a{
+        margin-right: 3rem;
+        transition: linear 500ms;
+    }
+    .abous-us__content-a:hover{
+        padding-left: 2.5rem;
+    }
+   
+   .abous-us__content p{
+    margin-left:35rem;
+    margin-right: 3rem;
+    font-size: 20px;
+   }
+   .abous-us__content h1{
+    margin-right: 3rem;
+    font-size: 64px;
+   }
+   .servises h1{
+    font-size: 120px;
+    margin-right: 8rem;
+   }
+   .servises h2{
+    font-size: 64px;
+    margin-right: 8rem;
+    /* display: inline; */
+    width: 40%;
+    float: right;
+   }
+   .servises .servisex__text{
+    /* margin-right: 8rem; */
+    border-right: .3rem solid #82a8ff;;
+    /* display: inline; */
+    width: 42%;
+    transform: translateY(-17rem);
+    margin-left: 8rem;
+    font-size: 18px;
+   }
+   .srvises__icon{
+    transform: translateY(6rem);
+    justify-content: center;
+    margin-left: 0;
+    /* border: 1px solid; */
+    width: 100%;
+    padding-left: 12rem;
+   }
+   .pastil__sh .pastil__sh__pic{
+    padding-right: 0;
+    /* padding-left: 44rem; */
+    width: 55%;
+   }
+   .party{ 
+    transform: translate(); 
+   }
+   .birthday__party{
+    transform: translate();
+   }
+   .gift{
+    transform: translate(7rem ,2rem);
+   }
+   .candy{
+    transform: translate(0rem,8rem);
+   }
+   .gifts{
+    transform: translate(0rem,10rem);
+   }
+   .pastil__sh ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+   .pastil__sh li{
+    padding: 4rem;
+   }
+   .pastil__sh{
+    flex-direction: row;
+    /* flex-wrap:wrap; */
+    /* justify-content: flex-end;🤣 */
+    direction: rtl;
+   }
+   .candyshop h1{
+    font-size: 120px;
+    text-align: right;
+    margin-right: 8rem;
+    transform: translateY(2rem);
+   }
+   .ice__one h2{
+    font-size: 64px;
+    margin-right: 7rem;
+    /* width: 30%; */
+    float: right;
+   }
+   .ice__one .adams{
+    font-size: 18px;
+    margin-right: 7rem;
+    margin-top: 12rem;
+   }
+   .ice__one__text{
+    width: 47%;
+    float: right;
+   }
+   .ice__one .two{
+    height: 500px;
+    transform: translate(3rem,-26rem);
+   }
+   .ice__one .one{
+    transform: translate(43rem,30rem)rotate(-14deg);
+    
+   }
+   .ice__one .one.show{
+    /* rotate: -10deg; */
+   }
+   .ice__one ul{
+    display: flex;
+    gap: 4rem;
+    margin: 0 7rem;
+   }
+   .ice__one ul li img{
+    opacity: 0;
+    transition: linear 800ms;
+   }
+   .ice__one ul li img.show{
+    opacity: 1;
+   }
+   .sh{
+    transition: linear 500ms;
+   }
+   .sh:hover{
+    padding: .5rem 2rem;
+   }
+
+   .imazing__one__text{
+    width: 44%;
+    margin-right: 8rem;
+    float: right;
+   }
+   .imazing__one__text h2{
+    font-size: 64px;
+    margin: 2rem;
+   }
+   .imazing__one__text p{
+    font-size: 18px;
+    margin:0 2rem 0 0;
+   }
+   .imazing{
+    background-image: url(/assets/img/candy-shop-14-min.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 57rem;
+    display: flex;
+    flex-direction: column;
+   }
+   .imazing ul{
+    flex-direction: row;
+    background-image: none;
+    background-color: rgba(0, 0, 0,0);
+    padding-left: 39rem;
+    direction: rtl;
+    margin-top: 1.5rem;
+   }
+   .imazing__two{
+    padding-bottom: 8rem;
+   }
+   .imazing__two__img{
+    width: 40rem;
+    height: 40rem;
+    /* transform: translateY(-60rem); */
+    position: absolute;
+    top:0;
+    left: 3rem;
+    bottom: 10vh;
+   }
+   .footer__one h1{
+    font-size: 120px;
+   }
+   .footer__one h2{
+    font-size: 64px;
+    transform: translateY(-5rem);
+   
+   }
+   .footer__one p{
+    font-size: 20px;
+    margin: 0 18rem;
+   }
+   .footer__one ul{
+    list-style: none;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+   }
+   .imazing__tamam{
+    position: relative;
+   }
+   
+
+}
+
+
+
